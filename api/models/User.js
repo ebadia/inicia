@@ -8,7 +8,13 @@
 module.exports = {
 
   attributes: {
-
+		name: {
+			type: 'string',
+			unique: 'true'
+		},
+    roles: {
+      collection: 'Role',
+      via: 'users'
+    }
   }
 };
-
